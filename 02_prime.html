@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime Number</title>
+	<script>
+		function prime_number() {
+			var i,flag=0,number;
+			number = Number(document.getElementById('prime').value);
+			for (i = 2 ; i <= number/2 ; i++)
+			{
+				if (number % i == 0) 
+				{
+					flag = 1;
+					break;
+				}
+			}
+			if (flag == 0)
+			 {
+			 	window.alert(number+" The input is prime number.");
+			 }
+			 else
+			 {
+			 	window.alert(number+" The input is not prime number");
+			 }
+		}
+	</script>
+</head>
+<body>
+	<h1>Whether a number is Prime or not.</h1>
+	Enter The Number : <input type="text" id="prime">
+	<button onclick="prime_number()">Check</button>
+
+</body>
+</html>

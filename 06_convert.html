@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>convert</title>
+	<script>
+		function time_convert() {
+			var num = document.getElementById('input').value;
+			var hours = Math.floor(num / 60);
+			var minutes = num % 60;
+			document.getElementById('result').innerHTML = hours + ":" + minutes;
+		}
+	</script>
+</head>
+<body>
+	Enter the Number : <input type="text" id="input">
+	<input type="button" value="Check" onclick="time_convert()">
+	<p>The Result is : <br><span id="result"></span></p>
+</body>
+</html>

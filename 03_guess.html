@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess</title>
+	<script>
+		function gess() {
+			var x = Math.floor((Math.random()* 10) + 1);
+			var i = document.getElementById('match').value;
+			if (i == x)
+			{
+				document.getElementById('random').innerHTML = " Good Work ";
+			}
+			else
+			{
+				document.getElementById('random').innerHTML = " Not Match ";
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="match"/>
+	<button onclick="gess()">Check</button>
+	<p id="random"></p>
+</body>
+</html>
